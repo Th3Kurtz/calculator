@@ -11,3 +11,8 @@ The program prints "Result:" followed by the answer
 To test, enter 6, then *, then 7. Expect 42.0.
 Stop the program with Ctrl+C
 
+## Regression testing/Quality gates
+Open a virtual environment with 'source /opt/python-venv/sccm-4910/gin/activate'
+Run python3 test_calculator.py
+Quality gate: run ./check.sh or equivalent from any directory. Expect 7 passes.
+Use 'echo $?' after either test and ensure that '0' is output.
