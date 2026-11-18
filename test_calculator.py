@@ -24,3 +24,7 @@ def test_divide_uneven():
 
 def test_add_negative():
   assert add(-5, -2) == -7
+
+def test_circleArea():
+  assert CircleArea(-4) == "Error"
+
